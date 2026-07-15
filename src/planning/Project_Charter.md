@@ -1,0 +1,129 @@
+Project Title
+
+SAM
+
+Saint Andrews Map
+
+Digital Navigation and Location Management System
+
+Prepared by
+
+Jean Pierre Joseph
+
+Electronic Engineer | Computer Engineering Student
+
+Software & IoT Developer
+
+For
+
+Saint Andrews Country Club
+
+Version 1.0
+
+Date July 2026
+
+Confidentiality
+
+This document presents the concept and preliminary design of the Saint Andrews Map (SAM) project. It is intended solely for evaluation and discussion purposes.
+
+1 Executive Summary
+
+2 Business Problem
+
+3 Proposed Solution
+
+4 Vision Statement
+
+5 Mission Statement
+
+6 Business Objectives
+
+7 Project Scope
+
+8 Stakeholders
+
+9 Project Deliverables
+
+10 Technologies
+
+11 Expected Benefits
+
+12 Risks
+
+13 Success Criteria
+
+14 Project Timeline
+
+15 Future Expansion
+
+Executive Summary
+The Saint Andrews Map (SAM) project is a web-based digital navigation platform designed to improve navigation, accessibility, and operational efficiency throughout Saint Andrews Country Club.
+Currently, members, guests, contractors, and employees rely primarily on static google maps, verbal directions, or personal knowledge to locate destinations within the property. Because of the club's large size and extensive road network, finding specific facilities may be time-consuming, particularly for first-time visitors and newly members or hired employees.
+SAM aims to modernize this experience by providing an interactive digital map from our private roads, capable of displaying locations and calculating the optimal route between two destinations using different transportation modes, including walking, golf cart, and vehicle travel.
+The platform will leverage GPS-generated route data, a Microsoft SQL Server database, and a modern React-based web interface to provide an intuitive navigation experience accessible from smartphones, tablets, and desktop computers.
+Beyond navigation, the project establishes a scalable foundation for future enhancements, including real-time location services, maintenance tracking, emergency routing, asset management, and mobile application integration.
+
+Business Problem
+Saint Andrews Country Club covers a large geographic area consisting of residential communities, golf courses, club facilities, recreational areas, maintenance buildings, restaurants, and numerous interconnected roadways.
+Although maps currently exist, navigation through our private roads remains challenging for several groups including:
+• New members
+• Guests
+• Contractors
+• Delivery personnel
+• New employees
+• Temporary staff
+Common challenges include:
+• Difficulty locating specific buildings
+• Time lost asking for directions
+• Limited knowledge of internal road networks
+• Lack of navigation assistance for golf cart paths
+• Difficulty distinguishing between vehicle roads, walking paths, and golf cart routes
+These challenges reduce operational efficiency and may negatively affect the overall member experience.
+
+Proposed Solution
+SAM is proposed as an interactive digital navigation platform capable of providing users with real-time route guidance throughout Saint Andrews Country Club.
+The application will allow users to:
+• Search for destinations
+• Display all buildings and points of interest
+• Select transportation methods
+• Generate optimized routes
+• View estimated travel distance
+• View estimated travel time
+• Display nearby facilities
+The platform will be accessible through any modern web browser without requiring software installation.
+
+Vision Statement
+To become the primary digital navigation platform that enhances accessibility, efficiency, and member experience throughout Saint Andrews Country Club.
+
+Mission Statement
+Design and develop a modern web-based navigation system that enables members, guests, and employees to locate facilities and receive optimized routes using multiple transportation methods.
+
+Business Objective
+✔ Develop an interactive digital map.
+✔ Reduce navigation time.
+✔ Improve accessibility.
+✔ Support multiple transportation methods.
+✔ Improve employee onboarding.
+✔ Increase member satisfaction.
+✔ Build a scalable GIS database.
+✔ Support future mobile applications.
+
+Procject Scope
+In Scope
+• Interactive digital map of the country club.
+• Searchable locations (clubhouse, restaurants, golf courses, maintenance buildings, etc.).
+• Route calculation between two selected locations.
+• Transportation modes:
+o Walking
+o Golf cart
+o Vehicle
+• Responsive web interface for desktop, tablet, and mobile.
+• Microsoft SQL Server database for map and location data.
+• GPS-based route collection and mapping.
+Out of Scope (Initial Version)
+• Indoor navigation.
+• Real-time GPS tracking of users.
+• Turn-by-turn voice navigation.
+• Reservation or booking systems.
+• Integration with member accounts.
+• Mobile app (native iOS/Android).

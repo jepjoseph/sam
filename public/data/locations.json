@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Station1",
+    "type": "Comfort Station",
+    "geojson": "Station1.geojson"
+  },
+  {
+    "id": 2,
+    "name": "Station2",
+    "type": "Comfort Station",
+    "geojson": "Station2.geojson"
+  },
+  {
+    "id": 3,
+    "name": "Station3",
+    "type": "Comfort Station",
+    "geojson": "Station3.geojson"
+  },
+  {
+    "id": 4,
+    "name": "Station4",
+    "type": "Comfort Station",
+    "geojson": "Station4.geojson"
+  },
+  {
+    "id": 5,
+    "name": "Compactor",
+    "type": "Disposal",
+    "geojson": "Compactor.geojson"
+  }
+]

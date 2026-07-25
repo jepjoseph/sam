@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with BasicAirData GPS Logger for Android - ver. 3.3.0 -->
+<!-- Track 13 = 6 TrackPoints + 1 Placemarks -->
+
+<!-- Track Statistics (based on Total Time | Time in Movement): -->
+<!--  Distance = 0 m -->
+<!--  Duration = 00:05 | 00:00 -->
+<!--  Altitude Gap = 0 m -->
+<!--  Max Speed = 1 mph -->
+<!--  Avg Speed = 0.2 |  mph -->
+<!--  Activity = steady -->
+<!--  Altitudes = Corrected using EGM96 grid (bilinear interpolation) -->
+
+<gpx version="1.0"
+     creator="BasicAirData GPS Logger 3.3.0"
+     xmlns="http://www.topografix.com/GPX/1/0"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/GPX/1/0/gpx.xsd">
+<name>GPS Logger 20260724-105726</name>
+<desc>Test00</desc>
+<time>2026-07-25T02:05:01Z</time>
+<keywords>steady</keywords>
+<bounds minlat="26.42371500" minlon="-80.15282333" maxlat="26.42371833" maxlon="-80.15282000" />
+
+<wpt lat="26.42369333" lon="-80.15280333"><ele>15.004</ele><time>2026-07-24T14:57:26Z</time><name>Station2</name><sat>15</sat></wpt>
+
+<trk>
+ <name>Track 20260724-105726</name>
+ <trkseg>
+  <trkpt lat="26.42371500" lon="-80.15282000"><ele>8.204</ele><time>2026-07-24T15:22:11Z</time><speed>0.460</speed><sat>17</sat></trkpt>
+  <trkpt lat="26.42371500" lon="-80.15282167"><ele>8.104</ele><time>2026-07-24T15:22:12Z</time><speed>0.434</speed><sat>17</sat></trkpt>
+  <trkpt lat="26.42371667" lon="-80.15282167"><ele>8.104</ele><time>2026-07-24T15:22:13Z</time><speed>0.408</speed><sat>18</sat></trkpt>
+  <trkpt lat="26.42371667" lon="-80.15282167"><ele>8.104</ele><time>2026-07-24T15:22:14Z</time><speed>0.000</speed><sat>18</sat></trkpt>
+  <trkpt lat="26.42371833" lon="-80.15282167"><ele>8.204</ele><time>2026-07-24T15:22:15Z</time><speed>0.000</speed><sat>18</sat></trkpt>
+  <trkpt lat="26.42371667" lon="-80.15282333"><ele>8.004</ele><time>2026-07-24T15:22:16Z</time><speed>0.000</speed><sat>18</sat></trkpt>
+ </trkseg>
+</trk>
+
+</gpx>
+ 

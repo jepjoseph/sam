@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with BasicAirData GPS Logger for Android - ver. 3.3.0 -->
+<!-- Track 8 = 691 TrackPoints + 2 Placemarks -->
+
+<!-- Track Statistics (based on Total Time | Time in Movement): -->
+<!--  Distance = 1.31 km -->
+<!--  Duration = 11:30 | 08:18 -->
+<!--  Altitude Gap = 3 m -->
+<!--  Max Speed = 10 mph -->
+<!--  Avg Speed = 4.3 | 5.9 mph -->
+<!--  Direction = SSE -->
+<!--  Activity = running -->
+<!--  Altitudes = Corrected using EGM96 grid (bilinear interpolation) -->
+
+<gpx version="1.0"
+     creator="BasicAirData GPS Logger 3.3.0"
+     xmlns="http://www.topografix.com/GPX/1/0"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/GPX/1/0/gpx.xsd">
+<name>GPS Logger 20260718-135758</name>
+<desc>ST-4-Gate</desc>
+<time>2026-07-21T17:17:04Z</time>
+<keywords>running</keywords>
+<bounds minlat="26.41056000" minlon="-80.16445500" maxlat="26.41670000" maxlon="-80.16104000" />
+
+<wpt lat="26.41059000" lon="-80.16104000"><ele>25.763</ele><time>2026-07-18T18:09:23Z</time><name>Gate</name><sat>16</sat></wpt>
+
+</gpx>
+ 

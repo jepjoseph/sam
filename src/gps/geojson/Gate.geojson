@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "Gate",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{"type":"Feature","properties":{"ele":25.763,"time":"2026-07-18T18:09:23Z","magvar":null,"geoidheight":null,"name":"Gate","cmt":null,"desc":null,"src":null,"url":null,"urlname":null,"sym":null,"type":null,"fix":null,"sat":16,"hdop":null,"vdop":null,"pdop":null,"ageofdgpsdata":null,"dgpsid":null},"geometry":{"type":"Point","coordinates":[-80.16104,26.41059,25.763]}}
+]
+}

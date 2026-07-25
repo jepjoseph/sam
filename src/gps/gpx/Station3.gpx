@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with BasicAirData GPS Logger for Android - ver. 3.3.0 -->
+<!-- Track 6 = 975 TrackPoints + 2 Placemarks -->
+
+<!-- Track Statistics (based on Total Time | Time in Movement): -->
+<!--  Distance = 1.20 km -->
+<!--  Duration = 16:14 | 07:28 -->
+<!--  Altitude Gap = -11 m -->
+<!--  Max Speed = 8 mph -->
+<!--  Avg Speed = 2.8 | 6.0 mph -->
+<!--  Direction = W -->
+<!--  Activity = running -->
+<!--  Altitudes = Corrected using EGM96 grid (bilinear interpolation) -->
+
+<gpx version="1.0"
+     creator="BasicAirData GPS Logger 3.3.0"
+     xmlns="http://www.topografix.com/GPX/1/0"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/GPX/1/0/gpx.xsd">
+<name>GPS Logger 20260718-125025</name>
+<desc>Garbage-ST-3</desc>
+<time>2026-07-21T17:17:26Z</time>
+<keywords>running</keywords>
+<bounds minlat="26.41453833" minlon="-80.17015500" maxlat="26.41737500" maxlon="-80.16351667" />
+
+<wpt lat="26.41656833" lon="-80.17012167"><ele>16.629</ele><time>2026-07-18T17:06:28Z</time><name>Site3</name><sat>14</sat></wpt>
+
+</gpx>

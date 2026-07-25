@@ -1,0 +1,48 @@
+.navbar {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("/images/navbar_pic03.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  height: 180px;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+
+  padding: 130px 40px 0 40px;
+}
+
+.logo {
+  color: white;
+  margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #7dd3fc;
+}
+
+/* Active page */
+.nav-links a.active {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 6px;
+}

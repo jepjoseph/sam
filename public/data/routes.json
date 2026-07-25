@@ -1,0 +1,26 @@
+[
+  {
+    "start": "Station1",
+    "destination": "Station2",
+    "geojson": "Track_ST_1_2.geojson",
+    "distance": 0.6,
+    "timeWalk": 12,
+    "timeCart": 4
+  },
+  {
+    "start": "Station3",
+    "destination": "Compactor",
+    "geojson": "Compactor_ST_3.geojson",
+    "distance": 0.8,
+    "timeWalk": 15,
+    "timeCart": 5
+  },
+  {
+    "start": "Station4",
+    "destination": "Gate",
+    "geojson": "Track_ST_4_Gate.geojson",
+    "distance": 0.8,
+    "timeWalk": 15,
+    "timeCart": 5
+  }
+]

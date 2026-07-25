@@ -1,0 +1,19 @@
+.location-container label {
+  color: white;
+}
+
+.location__single-value {
+  color: red;
+}
+
+.location__input-container {
+  color: red;
+}
+
+.location__placeholder {
+  color: red;
+}
+
+.location__option {
+  color: black;
+}

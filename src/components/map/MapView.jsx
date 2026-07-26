@@ -1,10 +1,16 @@
 import { useEffect, useState } from "react";
-import { MapContainer, TileLayer, GeoJSON } from "react-leaflet";
+import { MapContainer, TileLayer, GeoJSON, Marker, Popup } from "react-leaflet";
 import GeoJsonLayer from "./layers/GeoJsonLayer";
+import LocationLayer from "./layers/LocationLayer";
+import MapController from "./MapController";
+
 //import walkingRoute from "../../../public/gps/geojson/TrackPointsTest01.geojson";
 
 function MapView({ start, stops, destination, route }) {
   const [layers, setLayers] = useState({});
+  const selectedLocations = [start, ...stops, destination];
+  const routeGeoJson =
+    route && layers[route.geojson] ? layers[route.geojson] : null;
 
   const loadGeoJson = async (fileName) => {
     const response = await fetch(`/gps/geojson/${fileName}`);
@@ -46,31 +52,33 @@ function MapView({ start, stops, destination, route }) {
         attribution="&copy; OpenStreetMap contributors"
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
-      {start && layers[start.geojson] && (
-        <GeoJsonLayer
-          key={start.geojson}
-          data={layers[start.geojson]}
-          color="green"
+
+      <MapController
+        locations={selectedLocations}
+        routeGeoJson={routeGeoJson}
+      />
+
+      <LocationLayer
+        location={start}
+        layers={layers}
+        type="start"
+        color="green"
+      />
+      {stops.map((stop, index) => (
+        <LocationLayer
+          key={index}
+          location={stop}
+          layers={layers}
+          type="stop"
+          color="orange"
         />
-      )}
-      {stops.map(
-        (stop, index) =>
-          stop &&
-          layers[stop.geojson] && (
-            <GeoJsonLayer
-              key={`stop-${index}-${stop.geojson}`}
-              data={layers[stop.geojson]}
-              color="orange"
-            />
-          ),
-      )}
-      {destination && layers[destination.geojson] && (
-        <GeoJsonLayer
-          key={destination.geojson}
-          data={layers[destination.geojson]}
-          color="red"
-        />
-      )}
+      ))}
+      <LocationLayer
+        location={destination}
+        layers={layers}
+        type="destination"
+        color="red"
+      />
       {route && layers[route.geojson] && (
         <GeoJsonLayer
           key={route.geojson}

@@ -5,13 +5,18 @@ import MapView from "../components/map/MapView";
 import MainLayout from "../layouts/MainLayout";
 import "../styles/Map.css";
 
-function MapPage() {
-  const [start, setStart] = useState(null);
-  const [stops, setStops] = useState([]);
-  const [destination, setDestination] = useState(null);
-  const [routes, setRoutes] = useState([]);
-  const [route, setRoute] = useState(null);
-
+function MapPage({
+  start,
+  setStart,
+  stops,
+  setStops,
+  destination,
+  setDestination,
+  route,
+  setRoute,
+  routes,
+  setRoutes,
+}) {
   return (
     <MainLayout>
       <div className="map-page">

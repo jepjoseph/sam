@@ -160,6 +160,12 @@ Objectives: Prepare and test your first geolocation through VSCode app suite
 
 1. Route service
 
-2. Highly Visual
+Completed
 
-3. Import GeoJSON
+✔ Route service
+
+July 25, 2026
+
+Objectives: make LocationLayer smarter
+
+1. Route service

@@ -91,13 +91,30 @@ function NavigationPanel({
       const response = await fetch("/data/locations.json");
 
       const data = await response.json();
-
+      /*
       const formattedLocations = data.map((location) => ({
         value: location.id,
         label: location.name,
         ...location,
       }));
+*/
+      const formattedLocations = await Promise.all(
+        data.map(async (location) => {
+          const response = await fetch(`/gps/geojson/${location.geojson}`);
 
+          const geojson = await response.json();
+
+          const coordinates = geojson.features[0].geometry.coordinates;
+
+          return {
+            value: location.id,
+            label: location.name,
+            ...location,
+
+            coordinates: coordinates,
+          };
+        }),
+      );
       // Add current GPS location
       navigator.geolocation.getCurrentPosition(
         (position) => {

@@ -21,9 +21,15 @@ function AppRoutes({
 
   routes,
   setRoutes,
+
+  useCurrentLocation,
+  setUseCurrentLocation,
+
+  currentLocation,
+  setCurrentLocation,
 }) {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/sam">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route
@@ -40,6 +46,10 @@ function AppRoutes({
               setRoute={setRoute}
               routes={routes}
               setRoutes={setRoutes}
+              useCurrentLocation={useCurrentLocation}
+              setUseCurrentLocation={setUseCurrentLocation}
+              currentLocation={currentLocation}
+              setCurrentLocation={setCurrentLocation}
             />
           }
         />

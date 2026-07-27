@@ -16,6 +16,10 @@ function MapPage({
   setRoute,
   routes,
   setRoutes,
+  useCurrentLocation,
+  setUseCurrentLocation,
+  currentLocation,
+  setCurrentLocation,
 }) {
   return (
     <MainLayout>
@@ -31,6 +35,10 @@ function MapPage({
           setRoute={setRoute}
           routes={routes}
           setRoutes={setRoutes}
+          useCurrentLocation={useCurrentLocation}
+          setUseCurrentLocation={setUseCurrentLocation}
+          currentLocation={currentLocation}
+          setCurrentLocation={setCurrentLocation}
         />
 
         <div className="map-container">
@@ -39,6 +47,8 @@ function MapPage({
             stops={stops}
             destination={destination}
             route={route}
+            currentLocation={currentLocation}
+            useCurrentLocation={useCurrentLocation}
           />
         </div>
       </div>

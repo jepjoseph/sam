@@ -11,6 +11,11 @@ function App() {
   const [route, setRoute] = useState(null);
 
   const [routes, setRoutes] = useState([]);
+
+  const [useCurrentLocation, setUseCurrentLocation] = useState(false);
+
+  const [currentLocation, setCurrentLocation] = useState(null);
+
   return (
     <AppRoutes
       start={start}
@@ -23,6 +28,10 @@ function App() {
       setRoute={setRoute}
       routes={routes}
       setRoutes={setRoutes}
+      useCurrentLocation={useCurrentLocation}
+      setUseCurrentLocation={setUseCurrentLocation}
+      currentLocation={currentLocation}
+      setCurrentLocation={setCurrentLocation}
     />
   );
 }

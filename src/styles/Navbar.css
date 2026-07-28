@@ -7,12 +7,11 @@
   background-repeat: no-repeat;
 
   height: 180px;
+  padding: 130px 40px 0 40px;
 
   display: flex;
   justify-content: space-between;
   gap: 30px;
-
-  padding: 130px 40px 0 40px;
 }
 
 .logo {
@@ -45,4 +44,15 @@
   text-decoration: underline;
   text-decoration-thickness: 3px;
   text-underline-offset: 6px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    height: 120px;
+    padding: 80px 20px 0 20px;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
 }

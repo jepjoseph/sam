@@ -21,25 +21,39 @@ function MapPage({
   currentLocation,
   setCurrentLocation,
 }) {
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+
   return (
     <MainLayout>
       <div className="map-page">
-        <NavigationPanel
-          start={start}
-          setStart={setStart}
-          stops={stops}
-          setStops={setStops}
-          destination={destination}
-          setDestination={setDestination}
-          route={route}
-          setRoute={setRoute}
-          routes={routes}
-          setRoutes={setRoutes}
-          useCurrentLocation={useCurrentLocation}
-          setUseCurrentLocation={setUseCurrentLocation}
-          currentLocation={currentLocation}
-          setCurrentLocation={setCurrentLocation}
-        />
+        <button
+          className={
+            sidebarOpen ? "mobile-menu-button open" : "mobile-menu-button"
+          }
+          onClick={() => setSidebarOpen(!sidebarOpen)}
+        >
+          {sidebarOpen ? "✕" : "☰"}
+        </button>
+        <div
+          className={sidebarOpen ? "navigation-panel open" : "navigation-panel"}
+        >
+          <NavigationPanel
+            start={start}
+            setStart={setStart}
+            stops={stops}
+            setStops={setStops}
+            destination={destination}
+            setDestination={setDestination}
+            route={route}
+            setRoute={setRoute}
+            routes={routes}
+            setRoutes={setRoutes}
+            useCurrentLocation={useCurrentLocation}
+            setUseCurrentLocation={setUseCurrentLocation}
+            currentLocation={currentLocation}
+            setCurrentLocation={setCurrentLocation}
+          />
+        </div>
 
         <div className="map-container">
           <MapView

@@ -168,4 +168,18 @@ July 25, 2026
 
 Objectives: make LocationLayer smarter
 
-1. Route service
+1. Search location and routes features and rules
+
+Completed
+
+✔ Search location and routes features and rules
+
+July 27, 2026
+
+Objectives: improve UX/UI
+
+1. Computer and tablet/phone display
+
+Completed
+
+✔ Search location and routes features and rules

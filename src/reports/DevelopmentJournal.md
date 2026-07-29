@@ -182,4 +182,26 @@ Objectives: improve UX/UI
 
 Completed
 
-✔ Search location and routes features and rules
+✔ Objectives: improve UX/UI
+
+July 28, 2026
+
+Objectives: Completing the website pages
+
+1. Creating Home, About, Contact page
+
+Completed
+
+✔ Creating Home, About, Contact page
+
+July 29, 2026
+
+Objectives: Completing the website pages functionalities
+
+1. Connecting Contact page to MSSQL database
+
+2. Creating a like and comment section in the contact page
+
+Completed
+
+✔ Connecting Contact page to MSSQL database

@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 import "../../styles/Navbar.css";
 
 function Navbar() {
+
   return (
     <nav className="navbar">
       <h2 className="logo">SAM</h2>

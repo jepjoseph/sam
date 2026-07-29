@@ -5,6 +5,18 @@ import stopMarker from "../assets/icons/stop-marker.png";
 import destinationMarker from "../assets/icons/destination-marker.png";
 import currentMarker from "../assets/icons/current-location.png";
 
+/* ------------------------- */
+/* Preload marker images     */
+/* ------------------------- */
+const preloadImages = (images) => {
+  images.forEach((src) => {
+    const img = new Image();
+    img.src = src;
+  });
+};
+
+preloadImages([startMarker, stopMarker, destinationMarker, currentMarker]);
+
 const commonOptions = {
   shadowUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png",
 

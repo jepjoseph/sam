@@ -30,7 +30,6 @@ function MapView({
     );
     const data = await response.json();
 
-    console.log(import.meta.env.BASE_URL);
     setLayers((prev) => ({
       ...prev,
       [fileName]: data,

@@ -317,6 +317,15 @@ function NavigationPanel({
     return stops.some((stop) => stop && stop.value === "current");
   };
 
+  const clearNavigation = () => {
+    setStart(null);
+    setStops([]);
+    setDestination(null);
+    setRoute(null);
+    setUseCurrentLocation(false);
+    setCurrentLocation(null);
+  };
+
   return (
     <div>
       <h2>Navigation</h2>
@@ -405,6 +414,20 @@ function NavigationPanel({
       </button>
 
       <RouteSummary />
+
+      <button
+        className="clear-navigation-btn"
+        onClick={clearNavigation}
+        disabled={
+          !start &&
+          stops.length === 0 &&
+          !destination &&
+          !route &&
+          !currentLocation
+        }
+      >
+        🗑 Clear Navigation
+      </button>
     </div>
   );
 }

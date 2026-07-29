@@ -1,0 +1,204 @@
+
+.home{
+    background:#f5f7fa;
+    min-height:100vh;
+    color:#1f2937;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    padding:70px 40px;
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr;
+
+    gap:70px;
+
+    align-items:center;
+}
+
+.hero-left h1{
+
+    font-size:3.5rem;
+
+    color:#0f4c81;
+
+    margin-bottom:10px;
+}
+
+.hero-left h3{
+
+    color:#3b82f6;
+
+    margin-bottom:30px;
+
+    font-weight:500;
+}
+
+.hero-left p{
+
+    line-height:1.9;
+
+    color:#475569;
+
+    text-align:justify;
+
+    margin-bottom:35px;
+}
+
+.button-group{
+
+    display:flex;
+
+    gap:15px;
+}
+
+.btn-primary{
+
+    background:#0f4c81;
+
+    color:white;
+
+    padding:12px 24px;
+
+    text-decoration:none;
+
+    border-radius:6px;
+
+    transition:.3s;
+}
+
+.btn-primary:hover{
+
+    background:#0c3d66;
+}
+
+.btn-secondary{
+
+    border:2px solid #0f4c81;
+
+    color:#0f4c81;
+
+    padding:12px 24px;
+
+    text-decoration:none;
+
+    border-radius:6px;
+
+    transition:.3s;
+}
+
+.btn-secondary:hover{
+
+    background:#0f4c81;
+
+    color:white;
+}
+
+/* ================= RIGHT SIDE ================= */
+
+.hero-right{
+
+    padding-left:40px;
+
+    border-left:3px solid #dbeafe;
+}
+
+.hero-right h2{
+
+    color:#0f4c81;
+
+    margin-bottom:20px;
+}
+
+.feature-list{
+
+    list-style:none;
+
+    padding:0;
+}
+
+.feature-list li{
+
+    padding:10px 0;
+
+    border-bottom:1px solid #e5e7eb;
+
+    color:#374151;
+}
+
+.feature-list li::before{
+
+    content:"✓ ";
+
+    color:#3b82f6;
+
+    font-weight:bold;
+}
+
+/* ================= MISSION ================= */
+
+.mission{
+
+    max-width:900px;
+
+    margin:20px auto 80px;
+
+    text-align:center;
+
+    padding:0 30px;
+}
+
+.mission h2{
+
+    color:#0f4c81;
+
+    margin-bottom:20px;
+}
+
+.mission p{
+
+    color:#475569;
+
+    line-height:1.9;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:900px){
+
+    .hero{
+
+        grid-template-columns:1fr;
+
+        gap:40px;
+    }
+
+    .hero-right{
+
+        border-left:none;
+
+        border-top:3px solid #dbeafe;
+
+        padding-left:0;
+
+        padding-top:30px;
+    }
+
+    .button-group{
+
+        flex-direction:column;
+    }
+
+    .hero-left h1{
+
+        font-size:2.5rem;
+    }
+}

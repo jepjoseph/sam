@@ -23,6 +23,17 @@ function MapPage({
 }) {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
+  const clearNavigation = () => {
+    setStart(null);
+    setStops([]);
+    setDestination(null);
+    setRoute(null);
+    setUseCurrentLocation(false);
+    setCurrentLocation(null);
+  };
+
+  const hasNavigation = start || destination || stops.length > 0 || route;
+
   return (
     <MainLayout>
       <div className="map-page">
@@ -34,6 +45,11 @@ function MapPage({
         >
           {sidebarOpen ? "✕" : "☰"}
         </button>
+        {!sidebarOpen && hasNavigation && (
+          <button className="floating-clear-btn" onClick={clearNavigation}>
+            🗑 Clear Navigation
+          </button>
+        )}
         <div
           className={sidebarOpen ? "navigation-panel open" : "navigation-panel"}
         >
